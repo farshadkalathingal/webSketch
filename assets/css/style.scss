@@ -6,6 +6,11 @@
     --bg-color-lighter: #000;
 }
 
+body {
+    background-color: var(--bg-color);
+    scroll-behavior: smooth;
+    color: var(--text-color);
+}
 
 #home {
     height: 100vh;
