@@ -10,6 +10,7 @@ body {
     background-color: var(--bg-color);
     scroll-behavior: smooth;
     color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
 }
 
 #home {
@@ -19,6 +20,7 @@ body {
     background-position: center;
     background-size: cover;
     width: 100%;
+    margin-top: -3.5rem;
 
     .bg-blur {
         width: 50%;
@@ -28,6 +30,11 @@ body {
         background-color: rgba($color: #fff, $alpha: 0.1);
         backdrop-filter: blur(4px);
         -webkit-backdrop-filter: blur(4px);
+        z-index: 0;
+    }
+
+    .home-content {
+        z-index: 1;
     }
 }
 
