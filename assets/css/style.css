@@ -5,6 +5,13 @@
   --bg-color-lighter: #000;
 }
 
+body {
+  background-color: var(--bg-color);
+  scroll-behavior: smooth;
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+}
+
 #home {
   height: 100vh;
   background-color: #000;
@@ -12,6 +19,7 @@
   background-position: center;
   background-size: cover;
   width: 100%;
+  margin-top: -3.5rem;
 }
 
 #home .bg-blur {
@@ -22,5 +30,10 @@
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
+  z-index: 0;
+}
+
+#home .home-content {
+  z-index: 1;
 }
 /*# sourceMappingURL=style.css.map */
