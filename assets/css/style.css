@@ -5,6 +5,20 @@
   --bg-color-lighter: #000;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
 body {
   background-color: var(--bg-color);
   scroll-behavior: smooth;
@@ -19,7 +33,7 @@ body {
   background-position: center;
   background-size: cover;
   width: 100%;
-  margin-top: -3.5rem;
+  margin-top: -5rem;
 }
 
 #home .bg-blur {
@@ -35,5 +49,42 @@ body {
 
 #home .home-content {
   z-index: 1;
+  margin: auto;
+}
+
+#home .home-content h1 {
+  text-transform: uppercase;
+  font-size: 7rem;
+  font-weight: 700;
+  letter-spacing: 15px;
+  color: #fff;
+  background-image: url();
+}
+
+#home .home-content h1 span {
+  font-weight: 400;
+}
+
+#counter .card {
+  background-color: transparent;
+  border-radius: 0;
+  border: solid 1px #212121;
+  text-align: center;
+  height: 230px;
+}
+
+footer {
+  background-color: #0d001d;
+  width: 98%;
+  border-top-right-radius: 120px;
+  margin-top: 5rem;
+}
+
+footer .social-icons {
+  list-style: none;
+}
+
+footer .social-icons li {
+  display: inline-block;
 }
 /*# sourceMappingURL=style.css.map */

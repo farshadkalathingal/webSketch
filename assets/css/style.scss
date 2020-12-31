@@ -6,6 +6,19 @@
     --bg-color-lighter: #000;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    padding-inline-start: 0;
+}
+
 body {
     background-color: var(--bg-color);
     scroll-behavior: smooth;
@@ -20,7 +33,7 @@ body {
     background-position: center;
     background-size: cover;
     width: 100%;
-    margin-top: -3.5rem;
+    margin-top: -5rem;
 
     .bg-blur {
         width: 50%;
@@ -35,6 +48,45 @@ body {
 
     .home-content {
         z-index: 1;
+        margin: auto;
+
+        h1 {
+            text-transform: uppercase;
+            font-size: 7rem;
+            font-weight: 700;
+            letter-spacing: 15px;
+            color: #fff;
+            background-image: url();
+
+            span {
+                font-weight: 400;
+            }
+        }
     }
 }
 
+#counter {
+    .card {
+        background-color: transparent;
+        border-radius: 0;
+        border: solid 1px rgb(33, 33, 33);
+        text-align: center;
+        height: 230px;
+    }
+}
+
+
+footer {
+    background-color: rgb(13, 0, 29);
+    width: 98%;
+    border-top-right-radius: 120px;
+    margin-top: 5rem;
+
+    .social-icons {
+        list-style: none;
+
+        li {
+            display: inline-block;
+        }
+    }
+}
